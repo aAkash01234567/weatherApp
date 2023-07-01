@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="searchbar">
+            <input type="text" placeholder="Enter city name" spellcheck="flase">
+            <button onclick="searchWeather()"><img src="search.png"></button>
+        </div>
+        <div class="error">
+            <img src="error.png" alt="">
+        </div>
+        <div class="box">
+            <img src="clear.png" class="weather">
+            <h1 class="temp">22</h1>
+            <h2 class="city">New York</h2>
+            <div class="weatherDetails">
+                <div class="col-1">
+                    <p>Min. Temparature</p>
+                    <p class="minTemp">50%</p>
+                </div>
+                <div class="col-1">
+                    <p>Max. Temparature</p>
+                    <p class="maxTemp">50</p>
+                </div>
+            </div>
+            <div class="weatherDetails">
+                <div class="col">
+                    <img src="humidity.png">
+                    <div><p class="humidity">50%</p>
+                    <p>Humidity</p></div>
+                </div>
+                <div class="col">
+                    <img src="wind.png">
+                    <div><p class="wind">50 Km/h</p>
+                    <p>Wind Speed</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Jstyle.js"></script>
+</body>
+</html>
